@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDzor", "CRUDzor\CRUDzor.csproj", "{F123EF6A-EDAB-4565-8538-781BD3F9E1F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDzor", "CRUDzor\CRUDzor.csproj", "{F123EF6A-EDAB-4565-8538-781BD3F9E1F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CRUDzor.Components", "CRUDzor.Components\CRUDzor.Components.csproj", "{39C1C5CC-413F-427F-B438-9BD789A9F667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CRUDzor.EFCore", "CRUDzor.EFCore\CRUDzor.EFCore.csproj", "{6DA156AD-12F4-4984-A055-038752F44E65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{F123EF6A-EDAB-4565-8538-781BD3F9E1F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F123EF6A-EDAB-4565-8538-781BD3F9E1F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F123EF6A-EDAB-4565-8538-781BD3F9E1F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39C1C5CC-413F-427F-B438-9BD789A9F667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39C1C5CC-413F-427F-B438-9BD789A9F667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39C1C5CC-413F-427F-B438-9BD789A9F667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39C1C5CC-413F-427F-B438-9BD789A9F667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA156AD-12F4-4984-A055-038752F44E65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA156AD-12F4-4984-A055-038752F44E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA156AD-12F4-4984-A055-038752F44E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA156AD-12F4-4984-A055-038752F44E65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

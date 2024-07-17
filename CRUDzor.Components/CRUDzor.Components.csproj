@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Title>CRUDzor Framework</Title>
+		<Version>1.0-beta</Version>
+		<Authors>Drew Cavanaugh</Authors>
+		<Company />
+		<Product>CRUDzor Framework</Product>
+		<Description>Blazor CRUD boilerplate framework to quickly build royalty-free enterprise apps out of the box.</Description>
+		<RepositoryUrl>https://github.com/drewcav96/CRUDzor</RepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.*" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.*" />
+		<PackageReference Include="Radzen.Blazor" Version="4.*" />
+		<PackageReference Include="vNext.BlazorComponents.FluentValidation" Version="*" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CRUDzor\CRUDzor.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Update="Properties\Resources.Designer.cs">
+	    <DesignTime>True</DesignTime>
+	    <AutoGen>True</AutoGen>
+	    <DependentUpon>Resources.resx</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Update="Properties\Resources.resx">
+	    <Generator>ResXFileCodeGenerator</Generator>
+	    <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+	  </EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Using Include="CRUDzor.Components.Properties.Resources">
+	    <Static>True</Static>
+	  </Using>
+	</ItemGroup>
+
+</Project>

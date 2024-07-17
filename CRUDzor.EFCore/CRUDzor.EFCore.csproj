@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Title>CRUDzor Framework</Title>
+		<Version>1.0-beta</Version>
+		<Authors>Drew Cavanaugh</Authors>
+		<Company />
+		<Product>CRUDzor Framework</Product>
+		<Description>Blazor CRUD boilerplate framework to quickly build royalty-free enterprise apps out of the box.</Description>
+		<RepositoryUrl>https://github.com/drewcav96/CRUDzor</RepositoryUrl>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Automapper.Collection.EntityFrameworkCore" Version="*" />
+		<PackageReference Include="System.Linq.Dynamic.Core" Version="*" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\CRUDzor\CRUDzor.csproj" />
+	</ItemGroup>
+
+</Project>

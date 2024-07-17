@@ -1,0 +1,35 @@
+﻿@implements ISectionHeaderLayout
+
+<RadzenPanel Style="max-height: 96vh;">
+    <HeaderTemplate>
+        <RadzenStack class="rz-mx-2 rz-mb-3 w-100"
+                     Orientation=Orientation.Horizontal
+                     AlignItems=AlignItems.Center
+                     Gap="0">
+            @* TitleSection section *@
+            <RadzenStack class="rz-me-auto"
+                         Orientation=Orientation.Horizontal
+                         AlignItems=AlignItems.End
+                         Gap="8px">
+                <RadzenText TextStyle=TextStyle.H6>
+                    <SectionOutlet SectionId=TitleSection />
+                </RadzenText>
+            </RadzenStack>
+
+            @* ActionSection section *@
+            <RadzenStack Orientation=Orientation.Horizontal
+                         AlignItems=AlignItems.Center
+                         JustifyContent=JustifyContent.End
+                         Gap="8px">
+                <SectionOutlet SectionId=ActionSection />
+            </RadzenStack>
+        </RadzenStack>
+    </HeaderTemplate>
+    <ChildContent>
+        <CascadingValue TValue=ISectionHeaderLayout
+                        Value=this
+                        IsFixed>
+            @ChildContent
+        </CascadingValue>
+    </ChildContent>
+</RadzenPanel>
