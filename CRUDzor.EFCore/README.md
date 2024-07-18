@@ -1,0 +1,3 @@
+# CRUDzor Entity Framework Core
+
+Readme in progress...

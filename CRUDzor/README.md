@@ -1,0 +1,3 @@
+# CRUDzor Framework Core
+
+Readme in progress...

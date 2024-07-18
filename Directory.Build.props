@@ -1,0 +1,13 @@
+<Project>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<DotNetVersion>8.0.*</DotNetVersion>
+		<Authors>Drew Cavanaugh</Authors>
+		<Company />
+		<Product>CRUDzor Framework</Product>
+		<RepositoryUrl>https://github.com/drewcav96/CRUDzor</RepositoryUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+</Project>

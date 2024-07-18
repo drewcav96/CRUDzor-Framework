@@ -1,16 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
 	<PropertyGroup>
-		<TargetFramework>net8.0</TargetFramework>
-		<ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		<Title>CRUDzor Framework</Title>
-		<Version>1.0-beta</Version>
-		<Authors>Drew Cavanaugh</Authors>
-		<Company />
-		<Product>CRUDzor Framework</Product>
+		<Title>CRUDzor Radzen Components</Title>
+		<Version>0.1-beta</Version>
 		<Description>Blazor CRUD boilerplate framework to quickly build royalty-free enterprise apps out of the box.</Description>
-		<RepositoryUrl>https://github.com/drewcav96/CRUDzor</RepositoryUrl>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -18,8 +13,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="8.0.*" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="8.0.*" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Authorization" Version="$(DotNetVersion)" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="$(DotNetVersion)" />
 		<PackageReference Include="Radzen.Blazor" Version="4.*" />
 		<PackageReference Include="vNext.BlazorComponents.FluentValidation" Version="*" />
 	</ItemGroup>
@@ -47,6 +42,13 @@
 	  <Using Include="CRUDzor.Components.Properties.Resources">
 	    <Static>True</Static>
 	  </Using>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="README.md">
+	    <Pack>True</Pack>
+	    <PackagePath>\</PackagePath>
+	  </None>
 	</ItemGroup>
 
 </Project>
